@@ -35,9 +35,7 @@ A list of AI memory projects
 | ragie.ai                       | [https://ragie.ai/](https://ragie.ai/)     | 闭源               | [https://github.com/ragieai](https://github.com/ragieai) | 内存工具        | 向量           |
 | Ontotext                       | [https://www.ontotext.com/](https://www.ontotext.com/) | 闭源               | [https://github.com/Ontotext-AD](https://github.com/Ontotext-AD) | 内存工具        | 图形           |
 | SID                            | [https://www.sid.ai/](https://www.sid.ai/) | 闭源               |                                              | 内存工具        | 向量           |
-| vectara                        | [https://www.vectara.com
-
-/](https://www.vectara.com/) | 闭源               |                                              | 存储工具        | 向量           |
+| vectara                        | [https://www.vectara.com/](https://www.vectara.com/) | 闭源               |                                              | 存储工具        | 向量           |
 | arcus                          | [https://arcus.co/](https://arcus.co/)     | 闭源               |                                              | 存储工具        | 向量           |
 | Oxford Semantic Technologies   | [https://www.oxfordsemantic.tech/](https://www.oxfordsemantic.tech/) | 闭源               |                                              | 存储工具        | 图形           |
 | Prometheux                     | [https://www.prometheux.co.uk/](https://www.prometheux.co.uk/) | 闭源               |                                              | 内存工具，存储工具 | 向量       |
