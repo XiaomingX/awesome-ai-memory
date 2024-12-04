@@ -1,6 +1,9 @@
 # awesome-ai-memory
 A list of AI memory projects
 
+![image](https://github.com/user-attachments/assets/0c49665c-2ad2-4626-9093-ee0df8cd9e93)
+
+
 | 名称                           | 网址                                      | 类型               | GitHub 网址                                   | 分类            | 存储类型       |
 |--------------------------------|------------------------------------------|--------------------|----------------------------------------------|-----------------|----------------|
 | cognee                         | [https://www.cognee.ai/](https://www.cognee.ai/) | 托管，开源         | [https://github.com/topoteretes/cognee](https://github.com/topoteretes/cognee) | 内存工具        | 图形，向量     |
