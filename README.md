@@ -1,54 +1,68 @@
-# awesome-ai-memory - A list of AI memory projects
+# awesome-ai-memory - A list of AI memory projects (Updated 2026)
 
-| 名称                           | 网址                                      | 类型               | GitHub 网址                                   | 分类            | 存储类型       |
-|--------------------------------|------------------------------------------|--------------------|----------------------------------------------|-----------------|----------------|
-| Mem0 (mem zero)    | https://mem0.ai/                            | 托管，开源     | https://github.com/mem0ai/mem0                      | 内存工具     | 图形，向量     |
-| Cognee             | https://www.cognee.ai/                       | 托管，开源     | https://github.com/topoteretes/cognee               | 内存工具     | 图形，向量     |
-| Zep AI             | https://www.getzep.com/                      | 托管，开源     | https://github.com/getzep/zep                        | 内存工具     | 图形，向量     |
-| Basic Memory       | https://github.com/Obsidian-BasicMemory    | 本地优先，开源 | https://github.com/Obsidian-BasicMemory              | 本地存储     | Markdown 文件  |
-| Memories.ai        | https://memories.ai/                         | 托管，开源     | https://github.com/memories-ai/memories             | 记忆增强工具 | 视频+向量存储  |
-| Chroma             | https://www.trychroma.com/                    | 开源           | https://github.com/chroma-core/chroma               | 向量数据库   | 向量+元数据   |
-| Milvus             | https://milvus.io/                           | 开源           | https://github.com/milvus-io/milvus                  | 向量数据库   | 向量+元数据   |
-| Qdrant             | https://qdrant.tech/                         | 开源           | https://github.com/qdrant/qdrant                      | 向量数据库   | 向量+元数据   |
-| Memary             | https://finetune.dev/                    | 开源               | https://github.com/kingjulio8238/Memary       | 内存工具        | 图形           |
-| Letta (MemGPT)     | https://memgpt.ai/                       | 托管，开源         | https://github.com/cpacker/MemGPT              | 内存工具        | 图形，向量     |
-| GraphRAG (微软)     | https://microsoft.github.io/graphrag/   | 开源               | https://github.com/microsoft/graphrag          | 内存工具        | 图形，向量     |
-| Llama Index        | https://www.llamaindex.ai/               | 托管，开源         | https://github.com/run-llama/llama_index       | LLM 框架        | 图形，向量     |
-| LangChain          | https://www.langchain.com/               | 开源               | https://github.com/langchain-ai/langchain      | LLM 框架        | 向量           |
-| Haystack           | https://haystack.deepset.ai/             | 开源               | https://github.com/deepset-ai                   | LLM 框架        | 向量           |
-| Neo4j              | https://neo4j.com/                       | 托管，开源         | https://github.com/neo4j                        | 存储工具        | 图形           |
-| Weaviate           | https://weaviate.io/                     | 开源               | https://github.com/weaviate/weaviate            | 存储工具        | 向量           |
-| Faiss              | https://faiss.ai/                        | 开源               | https://github.com/facebookresearch/faiss       | 存储工具        | 向量           |
-| OpenMemory MCP     | https://github.com/mem0ai/mem0/tree/main/openmemory | 开源    | https://github.com/mem0ai/mem0                   | 记忆共享协议    | 向量           |
-| AutoGPT            | https://github.com/Significant-Gravitas/AutoGPT | 开源        | https://github.com/Significant-Gravitas/AutoGPT | AI Agent 框架   | 向量           |
+| 名称 | 网址 | 类型 | GitHub 网址 | 分类 | 存储类型 |
+| --- | --- | --- | --- | --- | --- |
+| **Mem0** | [https://mem0.ai/](https://mem0.ai/) | 托管，开源 | [https://github.com/mem0ai/mem0](https://github.com/mem0ai/mem0) | 记忆层 | 图形，向量 |
+| **Graphiti** (Zep Core) | [https://www.getzep.com/](https://www.getzep.com/) | 开源，托管 | [https://github.com/getzep/graphiti](https://github.com/getzep/graphiti) | 记忆层 | 时序知识图谱 |
+| **LangMem** | [https://langchain-ai.github.io/langmem/](https://langchain-ai.github.io/langmem/) | 开源 | [https://github.com/langchain-ai/langmem](https://github.com/langchain-ai/langmem) | 记忆层 | 向量，图形 |
+| **Cognee** | [https://www.cognee.ai/](https://www.cognee.ai/) | 托管，开源 | [https://github.com/topoteretes/cognee](https://github.com/topoteretes/cognee) | 记忆工具 | 图形，向量 |
+| **Basic Memory** | [https://basicmachines.co/](https://basicmachines.co/) | 本地优先，开源 | [https://github.com/basicmachines-co/basic-memory](https://github.com/basicmachines-co/basic-memory) | 本地存储 (MCP) | Markdown + SQLite |
+| **Nano-GraphRAG** | - | 开源 | [https://github.com/gusye1234/nano-graphrag](https://github.com/gusye1234/nano-graphrag) | 记忆工具 | 图形，向量 |
+| **AgentCortex** | [https://agentcortex.dev/](https://agentcortex.dev/) | 开源 | [https://github.com/sage-hq/agentcortex-mcp](https://github.com/sage-hq/agentcortex-mcp) | 记忆工具 (MCP) | 向量 |
+| **Letta** (原 MemGPT) | [https://letta.com/](https://www.google.com/search?q=https://letta.com/) | 托管，开源 | [https://github.com/letta-ai/letta](https://github.com/letta-ai/letta) | 记忆工具 | 图形，向量 |
+| **Memary** | [https://finetune.dev/](https://finetune.dev/) | 开源 | [https://github.com/kingjulio8238/Memary](https://github.com/kingjulio8238/Memary) | 记忆工具 | 图形 |
+| **GraphRAG** (微软) | [https://microsoft.github.io/graphrag/](https://microsoft.github.io/graphrag/) | 开源 | [https://github.com/microsoft/graphrag](https://github.com/microsoft/graphrag) | 记忆工具 | 图形，向量 |
+| **Memories.ai** | [https://memories.ai/](https://memories.ai/) | 托管 | - | 记忆增强 | 视频+向量 |
+| **Chroma** | [https://www.trychroma.com/](https://www.trychroma.com/) | 开源 | [https://github.com/chroma-core/chroma](https://github.com/chroma-core/chroma) | 向量数据库 | 向量+元数据 |
+| **Milvus** | [https://milvus.io/](https://milvus.io/) | 开源 | [https://github.com/milvus-io/milvus](https://github.com/milvus-io/milvus) | 向量数据库 | 向量+元数据 |
+| **Weaviate** | [https://weaviate.io/](https://weaviate.io/) | 开源 | [https://github.com/weaviate/weaviate](https://github.com/weaviate/weaviate) | 向量数据库 | 向量+元数据 |
+| **Qdrant** | [https://qdrant.tech/](https://qdrant.tech/) | 开源 | [https://github.com/qdrant/qdrant](https://github.com/qdrant/qdrant) | 向量数据库 | 向量+元数据 |
+| **Neo4j** | [https://neo4j.com/](https://neo4j.com/) | 托管，开源 | [https://github.com/neo4j](https://github.com/neo4j) | 图数据库 | 图形 |
+| **OpenMemory** | - | 协议标准 | [https://github.com/mem0ai/mem0](https://github.com/mem0ai/mem0) | 记忆协议 | - |
 
+---
 
-# 开源AI记忆列表优化更新建议（2025年版）
-结合最新开源动态，以下为awesome-ai-memory列表的优化与更新建议，涵盖2025年值得关注的开源AI记忆方案及其分类、存储类型等核心信息。
+# 开源AI记忆列表优化更新建议（2025-2026版）
 
+结合2025年以来的最新开源动态，以下为对`awesome-ai-memory`列表的深度优化与更新说明。本次更新重点关注**MCP（Model Context Protocol）生态**、**知识图谱轻量化**以及**官方框架的记忆层**。
 
-## 一、更新与补充说明
-1.  **新增Basic Memory项目**：采用本地优先架构，基于Markdown文件存储，无需依赖云端即可实现用户与AI的全双向长时记忆，适配注重隐私与本地化部署的场景。
-2.  **新增Memories.ai**：聚焦视频记忆的结构化存储与检索，融合向量数据库技术，强化AI对视频内容的记忆能力。
-3.  **补充主流开源向量数据库**：新增Chroma、Milvus、Qdrant等方案——这类工具因高性能、强扩展性及丰富索引能力，已成为AI记忆向量数据存储的主流底层支撑。
-4.  **保留核心活跃项目**：Cognee、Zep AI、Mem0等现有项目社区活跃度高、关注度持续，继续纳入列表。
-5.  **覆盖多元存储需求**：上述项目涵盖内存工具、记忆引擎、向量数据库等多维度，支持图形、向量、多媒体、本地Markdown等多样化存储场景。
+## 一、 关键更新与新增项目
+
+1. **Zep 升级为 Graphiti**：
+* **更新说明**：Zep 团队已将其核心的时序知识图谱引擎开源为 **Graphiti**。相比原有的 Zep 服务，Graphiti 更强调作为开发者的底层构建块，支持构建动态的、随时间变化的知识图谱记忆，是目前构建复杂 Agent 记忆的首选之一。
 
 
-## 二、选型建议
-1.  **按场景匹配存储类型**：需隐私保护可选用Basic Memory的本地存储；云端智能代理场景可优先选择Mem0或Zep AI。
-2.  **适配大规模检索需求**：针对低延迟、大规模记忆检索，建议结合Milvus、Chroma等开源向量数据库作为底层支撑。
-3.  **关注项目可持续性**：优先选择社区活跃、技术迭代稳定的项目，确保持续支持能力。
+2. **新增 LangMem (LangChain 官方)**：
+* **新增理由**：LangChain 官方推出的长期记忆解决方案。它通过后台进程自动提取、整合和更新 Agent 的知识，弥补了此前 LangChain 生态中缺乏标准化长期记忆层（Long-term Memory Layer）的空白。
 
 
-## 三、核心项目说明
-以下均为2024-2025年社区认可度高、技术前沿的AI记忆及智能体相关工具：
--  **Mem0**：代表性AI记忆层工具，支持多层次记忆与自适应个性化，解决大模型“记忆断片”问题，具备高效检索与智能更新机制，适配长期记忆与上下文连贯性需求。
--  **Cognee、Zep AI、Memary、Letta (MemGPT)、GraphRAG**：均融合知识图谱与向量存储，支持动态语义记忆与高级推理，适用于构建有状态AI智能体。
--  **Llama Index、LangChain、Haystack**：主流LLM框架，提供强大的向量检索与记忆管理能力，广泛应用于AI智能体及RAG系统。
--  **Neo4j、Weaviate、Milvus、Qdrant、Faiss**：领先的图数据库与向量数据库，支撑高效存储与检索，适配大规模知识及记忆管理场景。
--  **OpenMemory MCP**：最新发布的本地存储与跨工具记忆共享协议，支持多客户端无缝同步，提升多工具协作效率，适合隐私与本地化导向场景。
--  **AutoGPT**：热门AI Agent项目，具备高自主性与模块化设计，集成内存管理功能，支持复杂任务自动执行，适合开发者学习与实践。
+3. **修正 Basic Memory**：
+* **修正说明**：将链接修正为 `basicmachines-co/basic-memory`。这是一个基于 **MCP (Model Context Protocol)** 的本地化记忆服务，它允许 AI 直接读写本地 Markdown 文件并建立关联，非常适合 Obsidian 用户和注重隐私的本地 Agent 开发。
 
 
-本优化方案兼顾主流AI记忆工具与新兴底层向量数据库，贴合2025年技术趋势与应用需求，可根据具体场景进一步定制集成。
+4. **新增 Nano-GraphRAG**：
+* **新增理由**：微软的 GraphRAG 虽然强大但资源消耗巨大。**Nano-GraphRAG** 是一个极轻量级、易于修改的实现，它保留了图检索的核心优势，但大幅降低了部署门槛，适合个人开发者和中小型项目。
+
+
+5. **新增 AgentCortex**：
+* **新增理由**：首个原生的 **MCP** 记忆系统。随着 Anthropic 推出的 MCP 协议成为连接 LLM 与本地数据的标准，AgentCortex 提供了一种开箱即用的方式，让 Cursor、Claude Desktop 等工具拥有持久化记忆。
+
+
+
+## 二、 移除或降级建议
+
+1. **移除/归档 AutoGPT**：
+* 虽然 AutoGPT 是 Agent 的先驱，但其内存管理较为初级。在“AI 记忆”这个特定主题下，它不如专门的记忆层工具（如 Mem0, Letta）具有代表性。建议将其归类为“Agent 框架”而非“记忆项目”。
+
+
+2. **合并 OpenMemory MCP**：
+* OpenMemory 目前主要由 Mem0 推动，建议在 Mem0 条目中备注即可，无需作为独立项目列出，除非有其他厂商跟进该特定协议。
+
+
+
+## 三、 选型建议更新
+
+1. **生产环境首选**：构建面向用户的商业应用，优先考虑 **Mem0**（多用户管理成熟）或 **Graphiti**（图谱结构化能力强）。
+2. **框架原生开发**：如果你使用 LangChain/LangGraph 开发，直接集成 **LangMem** 是最顺畅的路径。
+3. **本地与隐私场景**：对于个人知识库助手或本地 LLM，**Basic Memory** 和 **Nano-GraphRAG** 是最佳选择，前者易于管理（Markdown），后者检索效果好。
+4. **MCP 生态集成**：如果你正在为 Claude Desktop 或 Cursor 开发插件，请关注 **AgentCortex** 和 **Basic Memory** 的 MCP 接口。
