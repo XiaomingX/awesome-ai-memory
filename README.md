@@ -36,6 +36,7 @@
 | **SimpleMem** | [aiming-lab/SimpleMem](https://github.com/aiming-lab/SimpleMem) | 开源 | 终身记忆层，支持跨对话的项目历史记忆。 |
 | **Supermemory** | [supermemory-ai/supermemory](https://github.com/supermemory-ai/supermemory) | 云原生 | 基于 Cloudflare 生态，构建分布式的个人 AI 记忆大脑。 |
 | **Khoj** | [khoj-ai/khoj](https://github.com/khoj-ai/khoj) | 多端 | 个人 AI 副驾驶，深度集成 Markdown 文档与笔记。 |
+| **SuperLocalMemory V3** | [qualixar/superlocalmemory](https://github.com/qualixar/superlocalmemory) | MCP/本地优先 | 基于信息几何的 Agent 记忆系统。LoCoMo 零云端 74.8%（最高本地优先记录），完整模式 87.7%。Fisher-Rao 检索、层叠同调一致性、Langevin 生命周期。EU AI 法合规，MIT 许可。[论文: arXiv:2603.14588](https://arxiv.org/abs/2603.14588) |
 
 ---
 
