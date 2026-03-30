@@ -21,6 +21,7 @@
 | **MemAlign** | [mlflow/memalign](https://github.com/mlflow/memalign) | 开源 | 双记忆 | Databricks 2026 新作，通过双记忆系统对齐 LLM Judge。 |
 | **Zep AI** | [getzep/zep](https://github.com/getzep/zep) | 托管/开源 | 图形 + 向量 | 聊天记忆平台，提供情感分析与深度总结功能。 |
 | **Letta** | [letta-ai/letta](https://github.com/letta-ai/letta) | 托管/开源 | 分层存储 | 原 MemGPT，将记忆视为操作系统的多级缓存（RAM/Disk）。 |
+| **Hindsight** | [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) | 开源 | 图形 + 向量 | Vectorize 出品的仿生记忆系统，支持语义、BM25、图谱及时序四路召回策略，可完全自托管。 |
 
 ---
 
