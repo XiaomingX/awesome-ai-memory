@@ -36,6 +36,7 @@
 | **SimpleMem** | [aiming-lab/SimpleMem](https://github.com/aiming-lab/SimpleMem) | 开源 | 终身记忆层，支持跨对话的项目历史记忆。 |
 | **Supermemory** | [supermemory-ai/supermemory](https://github.com/supermemory-ai/supermemory) | 云原生 | 基于 Cloudflare 生态，构建分布式的个人 AI 记忆大脑。 |
 | **Khoj** | [khoj-ai/khoj](https://github.com/khoj-ai/khoj) | 多端 | 个人 AI 副驾驶，深度集成 Markdown 文档与笔记。 |
+| **cc-soul** | [npm: @cc-soul/openclaw](https://www.npmjs.com/package/@cc-soul/openclaw) | 本地优先/REST API | 三层记忆蒸馏 + 7 维激活场召回引擎，纯 SQLite 无需向量数据库，`npm i @cc-soul/openclaw` 即用，支持任意 LLM 或零 LLM 离线运行。 |
 
 ---
 
