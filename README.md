@@ -89,6 +89,7 @@
 | :--- | :--- | :--- | :--- |
 | **meMCP** | [mixelpixx/meMCP](https://github.com/mixelpixx/meMCP) | MCP | 提供持久化语义搜索、TF-IDF 索引及原子存储管理。 |
 | **memento-mcp** | [gannonh/memento-mcp](https://github.com/gannonh/memento-mcp) | MCP | 知识图谱驱动的记忆系统，支持语义检索与时间感知。 |
+| **AccInt** | [maxbaluev/accreted-intelligence](https://github.com/maxbaluev/accreted-intelligence) | MCP/SQLite | 本地优先的编程代理 Work Model 与记忆层，支持 Claude Code、OpenCode、Codex、Cursor 共享同一个 SQLite 记忆基底，并把执行结果反馈到后续检索。 |
 | **Moltbot Skills**| [VoltAgent/awesome-moltbot-skills](https://github.com/VoltAgent/awesome-moltbot-skills) | Skills | 包含 Git-notes 记忆、LanceDB 三重记忆等 Moltbot 专属技能。 |
 | **mcp-memory** | [samwang0723/mcp-memory](https://github.com/samwang0723/mcp-memory) | MCP/Redis | 使用 Redis Graph 作为后端的知识图谱 MCP 服务器。 |
 
