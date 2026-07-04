@@ -156,6 +156,7 @@
 * [ConsistI2V Projects](https://github.com/TIGER-AI-Lab/ConsistI2V) - 视频生成一致性研究
 * [Awesome-Story-Generation](https://github.com/yingpengma/Awesome-Story-Generation) - 故事生成论文与算法集
 * [GitHubDaily - 开源项目精选](https://github.com/GitHubDaily/GitHubDaily)
+- **[Context Kit](https://github.com/JDDavenport/context-kit)** — Personal Context Artifacts: static context templates for giving AI agents persistent personal context. Complements dynamic memory systems. MIT.
 
 ---
 
