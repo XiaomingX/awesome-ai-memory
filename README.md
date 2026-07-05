@@ -161,3 +161,5 @@
 
 ## 🤝 贡献
 欢迎提交 PR 补充新的优质项目！请确保提供的 GitHub 链接真实有效。
+
+- [Context Kit](https://github.com/JDDavenport/context-kit) — 4 Markdown PCA templates (wiki, mental-models, voice, protocols) for persistent AI agent context. MIT.
