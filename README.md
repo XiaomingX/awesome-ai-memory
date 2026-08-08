@@ -68,6 +68,7 @@
 
 | 名称 | GitHub 网址 | 类型 | 特点 |
 | :--- | :--- | :--- | :--- |
+| **memtrace** | [syncable-dev/memtrace-public](https://github.com/syncable-dev/memtrace-public) | 面向编码代理的结构化内存层，通过 AST 构建双时态知识图，为 Claude、Cursor 等 MCP 客户端提供低延迟代码理解与检索能力。 | 社区实现，Rust 核心 🦀，MCP 服务 ☁️，代码智能与代理记忆。 | 
 | **NovelGenerator** | [KazKozDev/NovelGenerator](https://github.com/KazKozDev/NovelGenerator) | 多代理 | 跟踪人物视角、情节线与情感弧，适合生成完整小说。 |
 | **AgentCortex** | [sage-hq/agentcortex-mcp](https://github.com/sage-hq/agentcortex-mcp) | MCP | 原生 MCP 记忆系统，支持 Cursor 和 Claude Desktop。 |
 | **Basic Memory** | [basicmachines-co/basic-memory](https://github.com/basicmachines-co/basic-memory) | MCP/SQLite | 基于 SQLite 与 Markdown，极其隐私友好，适合本地知识库。 |
