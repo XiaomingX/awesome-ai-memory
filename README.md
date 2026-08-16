@@ -75,6 +75,7 @@
 | **SimpleMem** | [aiming-lab/SimpleMem](https://github.com/aiming-lab/SimpleMem) | 开源 | 终身记忆层，支持跨对话的项目历史记忆。 |
 | **Supermemory** | [supermemoryai/supermemory](https://github.com/supermemoryai/supermemory) | 云原生 | 基于 Cloudflare 生态，构建分布式的个人 AI 记忆大脑。 |
 | **Khoj** | [khoj-ai/khoj](https://github.com/khoj-ai/khoj) | 多端 | 个人 AI 副驾驶，深度集成 Markdown 文档与笔记。 |
+| **Agent QA**       | [vostride/agent-qa](https://github.com/vostride/agent-qa)                         | 测试 Agent/MCP | 将 Web/移动端用户流程、失败证据与已验证步骤保存为跨运行测试记忆。     |
 
 ---
 
