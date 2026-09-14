@@ -58,6 +58,7 @@
 | **LangMem** | [langchain-ai/langmem](https://github.com/langchain-ai/langmem) | 开源 | 向量 + 属性 | LangChain 官方长期记忆，自动提取、整合并更新知识。 |
 | **Zep AI** | [getzep/zep](https://github.com/getzep/zep) | 托管/开源 | 图形 + 向量 | 聊天记忆平台，提供情感分析与深度总结功能。 |
 | **Letta** | [letta-ai/letta](https://github.com/letta-ai/letta) | 托管/开源 | 分层存储 | 原 MemGPT，将记忆视为操作系统的多级缓存（RAM/Disk）。 |
+| **Nautilus-compass** | [chunxiaoxx/nautilus-compass](https://github.com/chunxiaoxx/nautilus-compass) | 开源 | 原文 + 向量 | 本地优先记忆层（MCP）：写入零 LLM 调用，读取按问题类型路由检索单元；跑分以 sha256+签名证据包发布，字节级可复算。 |
 | **SimpleMem** | [aiming-lab/SimpleMem](https://github.com/aiming-lab/SimpleMem) | 开源 | 多模态 | 终身记忆层，支持跨对话的项目历史记忆，含多模态能力。 |
 
 ---
