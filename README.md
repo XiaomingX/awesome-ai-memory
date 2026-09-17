@@ -71,6 +71,7 @@
 | **NovelGenerator** | [KazKozDev/NovelGenerator](https://github.com/KazKozDev/NovelGenerator) | 多代理 | 跟踪人物视角、情节线与情感弧，适合生成完整小说。 |
 | **AgentCortex** | [sage-hq/agentcortex-mcp](https://github.com/sage-hq/agentcortex-mcp) | MCP | 原生 MCP 记忆系统，支持 Cursor 和 Claude Desktop。 |
 | **Basic Memory** | [basicmachines-co/basic-memory](https://github.com/basicmachines-co/basic-memory) | MCP/SQLite | 基于 SQLite 与 Markdown，极其隐私友好，适合本地知识库。 |
+| **Mnemoverse** | [mnemoverse/mcp-memory-server](https://github.com/mnemoverse/mcp-memory-server) | MCP/托管 | 通过 MCP 为 AI Agent 提供托管记忆服务；告诉它某条召回的记忆是有帮助还是有误导，它会据此重排之后返回的结果。 |
 | **Nano-GraphRAG** | [gusye1234/nano-graphrag](https://github.com/gusye1234/nano-graphrag) | 本地优化 | 极轻量级 GraphRAG 实现，适合资源受限环境。 |
 | **SimpleMem** | [aiming-lab/SimpleMem](https://github.com/aiming-lab/SimpleMem) | 开源 | 终身记忆层，支持跨对话的项目历史记忆。 |
 | **Supermemory** | [supermemoryai/supermemory](https://github.com/supermemoryai/supermemory) | 云原生 | 基于 Cloudflare 生态，构建分布式的个人 AI 记忆大脑。 |
