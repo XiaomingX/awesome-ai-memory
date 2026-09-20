@@ -5,9 +5,11 @@
 ## 核心算法与研究
 
 - **Titans: Learning to Memorize at Test Time**：Google 提出，在预训练中引入神经记忆模块。
+- **Titans-as-a-Layer (MAL)**（2026）：把测试时神经记忆封装为即插即用适配层，无需改动主干即可注入长期记忆，并扩展到音频多模态。
 - **Ultra-Sparse Memory Network**：通过稀疏记忆网络优化内存使用与回忆效率。
 - **Rethinking Reflection in Pre-Training**：探索将反思机制融入预训练。
 - **Knowledge-Instruct**：利用知识指令进行持续预训练以增强记忆。
+- **AgeMem**（2026）：用强化学习统一学习 LTM/STM 的存储、检索、更新与遗忘策略，代表记忆管理从启发式走向可学习。
 
 ## 优质研究专栏
 

@@ -2,12 +2,60 @@
 
 这是一个专注于大语言模型（LLM）长期记忆（Long-term Memory）实现的精选列表，覆盖从底层检索/存储范式、记忆层系统、Agent 记忆工具，到多模态一致性、训练与对齐的完整生态。
 
-## 核心更新（2025-2026）
+## 核心更新（2026 Q2–Q3）
 
-- **Mem0g 图谱版落地**：Mem0 在向量记忆之外推出图谱版 Mem0g，强化实体关系推理与跨会话记忆整合。
-- **叙事增强**：针对长篇写作与叙事连贯性的专项记忆算法与工具逐渐成熟，覆盖人物弧线、情节线与情感弧跟踪。
-- **MCP 生态扩张**：涌现大量支持 Cursor、Claude Desktop、OpenClaw 等宿主的本地优先记忆插件，记忆能力正从"云端托管"走向"本地可私有化"。
-- **架构层记忆**：Titans 等神经长期记忆模块让"记忆"从外部检索进一步下探到模型架构与测试时学习。
+- **记忆管理 RL 化**：AgeMem 等把长期/短期记忆的增删改查变成 agent 可训练的工具动作，用三阶段 RL（step-wise GRPO）端到端优化，取代启发式控制器。
+- **从"原子事实"到多粒度**：TriMem 同时保留原始对话片段、抽取事实与合成画像三层粒度，用 TextGrad 迭代优化提示词，实现无参数更新的终身演化。
+- **冲突感知与事实修订**：MOSAIC、Infini Memory 针对"事实随时间变化"设计可维护记忆（主题文档 / 冲突检测），直击写路径质量控制难题。
+- **评测从"召回"转向"行动"**：MemoryAgentBench（ICLR'26）、MemoryArena / Memoria-Bench / AMA-Bench（ICML'26）、HaluMem、LongMemEval-V2 把评估推向操作级幻觉、多会话 agentic 任务与选择性遗忘。
+- **测试时记忆层化**：Titans-as-a-Layer 把神经长期记忆做成即插即用适配器（MAL），无需改动主干即可为多模态模型注入长期记忆。
+- **本地优先跨工具 MCP 记忆**：Memorix、OKF 标准的 mcp-memory 等以 SQLite / 知识图谱 + Markdown 落地，强调私有化与跨宿主（Claude Code / Cursor / Codex）共享。
+
+---
+
+## 近期重要进展（2026 年 6–9 月）
+
+### 新论文与新方法
+
+| 名称 | 来源 | 核心贡献 |
+| :--- | :--- | :--- |
+| **AgeMem（Agentic Memory）** | [arXiv 2601.01885](https://arxiv.org/abs/2601.01885) · ACL 2026 SAC Highlight | 把 LTM/STM 的存储、检索、更新、摘要、丢弃统一为 agent 工具动作，三阶段渐进式 RL + step-wise GRPO 训练，消除启发式控制器。 |
+| **TriMem** | [arXiv 2605.19952](https://arxiv.org/abs/2605.19952) | 突破"抽取原子事实"范式，同时维护原始对话、原子事实、合成画像三种粒度；TextGrad 迭代优化抽取/画像提示，无参数终身演化。 |
+| **Infini Memory** | [arXiv 2606.10677](https://arxiv.org/abs/2606.10677) | 把记忆组织成可维护的"主题文档"，新观测先入缓冲再周期合并；推理时用迭代式工具调用读取记忆，MemoryAgentBench 达 64.7%。 |
+| **MOSAIC** | [arXiv 2607.16211](https://arxiv.org/abs/2607.16211) | 冲突感知的结构化长期记忆，显式检测事实冲突（命中 66% vs 基线 14%），LoCoMo 准确率 89.35%。 |
+| **H-MEM** | [EACL 2026](https://aclanthology.org/2026.eacl-long.15.pdf) | 四层层次化记忆（领域→子域→关键词→事件/画像），前三层作为可解释索引提升长程推理效率。 |
+| **Titans-as-a-Layer（MAL）** | [arXiv 2606.08573](https://arxiv.org/abs/2606.08573) | 把 Titans 式测试时神经记忆做成即插即用的 Memory-as-a-Layer 适配器，为音频大模型注入对话历史而不改主干。 |
+| **MemDelta** | [arXiv 2606.29914](https://arxiv.org/abs/2606.29914) | 指出 agent 记忆评测中的隐藏混淆变量并给出受控基线，质疑此前评测结论的可比性。 |
+| **Diagnosing Retrieval vs. Utilization** | [arXiv 2603.02473](https://arxiv.org/abs/2603.02473) | 实证发现：检索质量对最终效果的影响远大于写入/压缩策略，原始分块即可媲美复杂事实抽取。 |
+| **How Memory Management Impacts LLM Agents** | [ACL 2026](https://aclanthology.org/2026.acl-long.27.pdf) | 系统研究"经验跟随"行为，揭示错误传播与错位经验回放，提出基于历史的记忆删除策略。 |
+
+### 新数据集与基准
+
+完整清单见 [`docs/memory-evaluation-benchmarks.md`](docs/memory-evaluation-benchmarks.md)。
+
+| 基准 | 来源 | 评测重点 |
+| :--- | :--- | :--- |
+| **MemoryAgentBench** | ICLR 2026 · [GitHub](https://github.com/HUST-AI-HYZ/MemoryAgentBench) | 四维能力：精确检索、测试时学习、长程理解、选择性遗忘；新增 EventQA 与 FactConsolidation。 |
+| **MemoryArena** | ICML 2026 · [GitHub](https://github.com/ZexueHe/MemoryArena) | 多会话 Memory-Agent-Environment 闭环，子任务相互依赖（网页导航/偏好规划/渐进搜索/形式推理）。 |
+| **Memoria-Bench** | ICML 2026 · [论文](https://palm.seu.edu.cn/zhangml/files/ICML%2726a.pdf) | 长程自主 agent 的情景/语义/程序记忆，覆盖深度研究、代码、表格任务；揭示百万 token 上下文仍存在的记忆瓶颈。 |
+| **AMA-Bench** | ICML 2026 · [GitHub](https://github.com/AMA-Bench/AMA-Bench) | 长程 agent 轨迹（状态/动作/观测/工具输出）的长上下文保留与长时程记忆表现。 |
+| **HaluMem** | [arXiv 2511.03506](https://arxiv.org/abs/2511.03506) | 首个操作级记忆幻觉基准，拆解抽取 / 更新 / 问答三阶段。 |
+| **LongMemEval-V2** | [arXiv 2605.12493](https://arxiv.org/abs/2605.12493) | 面向 web agent 环境经验（静态/动态状态、工作流、坑点、前提感知），历史轨迹最长 115M tokens。 |
+| **Mem-Gallery** | [ACL 2026](https://aclanthology.org/2026.acl-long.1892/) | 多模态长程对话记忆，评测 MLLM agent 的抽取/测试时适应、推理与知识管理。 |
+| **Mem2ActBench** | [ACL 2026](https://aclanthology.org/2026.acl-long.370/) | 评测 agent 能否主动用长期记忆驱动工具选择与参数落地（非被动问答）。 |
+| **EverMemBench** | [arXiv 2602.01313](https://arxiv.org/abs/2602.01313) | 多方职场对话，细粒度召回 / 记忆意识 / 用户画像理解。 |
+| **Memora** | [ACL 2026](https://github.com/geniesinc/Memora) · [arXiv 2604.20006](https://arxiv.org/abs/2604.20006) | 面向个性化 agent，同时给"该记住"与"该忘记（已删除/更新）"打分，提出 FAMA 指标。 |
+| **MemoryBench** | [arXiv 2510.17281](https://arxiv.org/abs/2510.17281) | 记忆 + 持续学习，on-policy / off-policy 交互模拟。 |
+| **BEAM** | ICLR 2026 | 百万 token 级长期记忆的召回与增强。 |
+
+### 新趋势
+
+1. **记忆管理 RL 化**：记忆操作不再是固定流水线，而是策略的一部分，由奖励信号驱动"该记什么、何时忘"。
+2. **多粒度 + 冲突感知的写路径**：从"抽取原子事实"转向同时保留原文、事实与画像，并显式处理事实冲突与修订。
+3. **评测操作级 / agentic 化**：评估从端到端 QA 分数，细化为抽取、更新、遗忘等环节，并转向多会话、可行动的任务。
+4. **测试时记忆层化**：神经长期记忆从"改架构"变为"可插拔层"，降低多模态模型注入长期记忆的门槛。
+5. **本地优先与标准化**：MCP 记忆服务强调本地运行、跨宿主共享，并出现 OKF 等记忆文件格式标准。
+6. **从"能记住"到"能行动"**：Mem2ActBench、MemoryArena 等直接检验记忆对工具调用与决策的增益。
 
 ---
 
@@ -42,7 +90,15 @@
 
 - **Titans（Google，2024-12，arXiv 2412.01427，NeurIPS 2025）**：提出"神经长期记忆（neural long-term memory）"模块，以"惊奇度"驱动、支持 test-time training/learning，将 RNN 式记忆与注意力结合处理超长上下文。
 
-> 演进主线：外部检索（RAG）→ Agent 记忆流与反思（Generative Agents / MemGPT）→ 记忆压缩与图谱化（ReadAgent / GraphRAG / HippoRAG / Memory3）→ 生产级记忆层（Mem0 / A-MEM / Zep）→ 架构内神经长期记忆（Titans）。记忆正从"提示词里塞资料"走向"模型自身学会记住"。
+### 记忆管理学习化与评测体系（2026）
+
+- **AgeMem / Agentic Memory（2026，arXiv 2601.01885，ACL 2026）**：把 LTM/STM 操作作为工具动作交给 agent 自主决策，用渐进式 RL 训练，标志记忆管理从启发式规则走向可学习策略。
+- **TriMem（2026，arXiv 2605.19952）**：以"原始对话 + 原子事实 + 合成画像"三种粒度共存替代单一事实抽取，配合 TextGrad 提示优化实现无参数终身演化。
+- **Infini Memory（2026，arXiv 2606.10677）**：把记忆重构为可维护的"主题文档"，配合迭代式 agentic 检索，强调证据聚合与事实修订。
+- **Titans-as-a-Layer（2026，arXiv 2606.08573）**：将测试时神经记忆封装为可插拔层（MAL），从"改架构"转向"加模块"，首次系统扩展到音频多模态。
+- **评测体系（2026）**：MemoryAgentBench（ICLR）、MemoryArena / Memoria-Bench / AMA-Bench（ICML）、HaluMem、LongMemEval-V2 等把评测细化到抽取/更新/遗忘等操作环节与多会话 agentic 任务。
+
+> 演进主线：外部检索（RAG）→ Agent 记忆流与反思（Generative Agents / MemGPT）→ 记忆压缩与图谱化（ReadAgent / GraphRAG / HippoRAG / Memory3）→ 生产级记忆层（Mem0 / A-MEM / Zep）→ 架构内神经长期记忆（Titans）→ 可学习的记忆管理 + 操作级评测（AgeMem / TriMem / MemoryAgentBench）。记忆正从"提示词里塞资料"走向"模型自身学会记住、并学会管理该记什么"。
 
 ---
 
@@ -59,6 +115,7 @@
 | **Zep AI** | [getzep/zep](https://github.com/getzep/zep) | 托管/开源 | 图形 + 向量 | 聊天记忆平台，提供情感分析与深度总结功能。 |
 | **Letta** | [letta-ai/letta](https://github.com/letta-ai/letta) | 托管/开源 | 分层存储 | 原 MemGPT，将记忆视为操作系统的多级缓存（RAM/Disk）。 |
 | **SimpleMem** | [aiming-lab/SimpleMem](https://github.com/aiming-lab/SimpleMem) | 开源 | 多模态 | 终身记忆层，支持跨对话的项目历史记忆，含多模态能力。 |
+| **MemoryOS** | [BAI-LAB/MemoryOS](https://github.com/BAI-LAB/MemoryOS) | 开源 | 分层存储 | 借鉴操作系统内存分页思想的分层记忆管理（arXiv 2506.06326），常被作为记忆评测基线。 |
 
 ---
 
@@ -121,6 +178,8 @@
 | **Titans** | [google-research/titans](https://github.com/google-research/titans) | Google 提出的经由神经记忆模块提升长文本处理的架构。 |
 | **HOMER** | [alinlab/HOMER](https://github.com/alinlab/HOMER) | 层次上下文合并（ICLR 2024），高效扩展上下文长度。 |
 | **Memory3** | [BAAI-Agents/Memory3](https://github.com/BAAI-Agents/Memory3) | BAAI 提出的显性记忆大模型，将知识外挂为稀疏记忆模块。 |
+| **AgeMem** | [arXiv 2601.01885](https://arxiv.org/abs/2601.01885) | 用强化学习统一学习 LTM/STM 的存储、检索、更新与遗忘策略（ACL 2026）。 |
+| **Titans-as-a-Layer** | [arXiv 2606.08573](https://arxiv.org/abs/2606.08573) | 即插即用的测试时记忆适配层（MAL），可扩展至音频多模态。 |
 | **Awesome LLM Pre-training** | [RUCAIBox/awesome-llm-pretraining](https://github.com/RUCAIBox/awesome-llm-pretraining) | 预训练策略、架构改进（如 Ultra-Sparse Memory）研究精选。 |
 
 ---
@@ -134,6 +193,8 @@
 | **memento-mcp** | [gannonh/memento-mcp](https://github.com/gannonh/memento-mcp) | MCP | 知识图谱驱动的记忆系统，支持语义检索与时间感知。 |
 | **OpenClaw Skills** | [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) | Skills | 包含 Git-notes 记忆、LanceDB 三重记忆等 OpenClaw 专属技能。 |
 | **mcp-memory** | [samwang0723/mcp-memory](https://github.com/samwang0723/mcp-memory) | MCP/Redis | 使用 Redis Graph 作为后端的知识图谱 MCP 服务器。 |
+| **Memorix** | [avids2/memorix](https://github.com/avids2/memorix) | MCP | 本地优先的跨工具共享记忆层，支持 Claude Code / Codex / Cursor / OpenCode 等。 |
+| **mcp-memory (OKF)** | [fellowgeek/mcp-memory](https://github.com/fellowgeek/mcp-memory) | MCP/SQLite | 基于 Open Knowledge Format v0.2 + SQLite FTS5 的持久记忆服务，Markdown 可读可审计。 |
 
 ---
 
@@ -209,15 +270,26 @@
                                                  ├─ MemGPT / Letta (2023) .... 虚拟上下文分层
                       机制/架构记忆 ─────────────┼─ LongMem (2023) ............ 冻结编码 + 缓存库
                                                  ├─ ReadAgent (2024) ......... 分页 + gist 压缩
-                                                 └─ Titans (2024-25, Google) . 神经长期记忆 + 测试时学习
+                                                 ├─ Titans (2024-25, Google) . 神经长期记忆 + 测试时学习
+                                                 └─ Titans-as-a-Layer (2026) . 记忆层化，即插即用
                                                  │
                                                  ├─ MemoryBank (2023) ........ 遗忘曲线衰减
                       生产级记忆层 ──────────────┼─ Mem0 / Mem0g (2025) ...... 向量 + 图谱记忆层
                                                  ├─ Zep / Graphiti ........... 时序知识图谱
                                                  └─ A-MEM (2025) ............. Zettelkasten 自主演化
                                                  │
-                      工具/协议生态 ──────────────┼─ MCP: AgentCortex / memento-mcp
-                                                 ├─ 本地优先: Basic Memory
+                                                 ├─ AgeMem (2026) ............ RL 学习记忆管理策略
+                      可学习记忆管理 (2026) ─────┼─ TriMem (2026) ............. 多粒度 + 无参数演化
+                                                 ├─ Infini Memory (2026) ..... 主题文档 + 事实修订
+                                                 └─ MOSAIC (2026) ............ 冲突感知结构化记忆
+                                                 │
+                                                 ├─ MemoryAgentBench (ICLR'26)  四维能力解耦
+                      评测体系 (2026) ───────────┼─ MemoryArena / Memoria-Bench 多会话 agentic
+                                                 ├─ HaluMem ................... 操作级幻觉
+                                                 └─ LongMemEval-V2 ............ 环境经验记忆
+                                                 │
+                                                 ├─ MCP: AgentCortex / memento-mcp
+                      工具/协议生态 ─────────────┼─ 本地优先: Basic Memory / Memorix / OKF
                                                  └─ 技能: OpenClaw Skills
                                                  │
                                                  ├─ 多模态: StoryMaker / ConsistI2V / Amphion
@@ -228,7 +300,7 @@
    (鱼头)
 ```
 
-阅读方法：从左上"检索/外部记忆"到右下"垂直场景延展"，技术由"通用范式"逐步下沉到"架构内记忆"并扩散到具体场景。每条大骨彼此并非互斥——例如 Mem0 同时用到检索与图谱，Titans 把记忆写进架构。
+阅读方法：从左上"检索/外部记忆"到右下"垂直场景延展"，技术由"通用范式"逐步下沉到"架构内记忆"并扩散到具体场景。每条大骨彼此并非互斥——例如 Mem0 同时用到检索与图谱，Titans 把记忆写进架构，AgeMem 则把记忆管理本身交给策略学习。
 
 ---
 
@@ -239,6 +311,7 @@
 - [Awesome-Audio-LLM](https://github.com/AudioLLMs/Awesome-Audio-LLM) - 音频大模型研究列表
 - [ConsistI2V Projects](https://github.com/TIGER-AI-Lab/ConsistI2V) - 视频生成一致性研究
 - [Awesome-Story-Generation](https://github.com/yingpengma/Awesome-Story-Generation) - 故事生成论文与算法集
+- [awesome-agent-memory](https://github.com/Snseam/awesome-agent-memory) - Agent 长期记忆的结构化证据库（论文索引、产品与基准对比）
 - [GitHubDaily - 开源项目精选](https://github.com/GitHubDaily/GitHubDaily)
 
 ---

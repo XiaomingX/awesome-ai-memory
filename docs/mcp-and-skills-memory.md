@@ -11,6 +11,14 @@
 | **mcp-memory** | Redis Graph 后端知识图谱服务器，存储复杂的项目与对话关系。 | [samwang0723/mcp-memory](https://github.com/samwang0723/mcp-memory) |
 | **memory-mcp** | 简单的集成式 MCP 服务器，支持持久记忆与智能归档。 | [JamesANZ/memory-mcp](https://github.com/JamesANZ/memory-mcp) |
 
+## 2026 新增：本地优先与跨工具
+
+| 项目名称 | 介绍 | GitHub 链接 |
+| :--- | :--- | :--- |
+| **Memorix** | 本地优先的共享记忆层，一套项目记忆跨 Claude Code / Codex / Cursor / OpenCode 等宿主共享。 | [avids2/memorix](https://github.com/avids2/memorix) |
+| **mcp-memory (OKF)** | Open Knowledge Format v0.2 Markdown + SQLite FTS5，记忆以可读文件落盘并可审计。 | [fellowgeek/mcp-memory](https://github.com/fellowgeek/mcp-memory) |
+| **Mnemoverse** | 托管型跨工具记忆服务，根据"回忆是否有用"反馈动态重排检索结果。 | [mnemoverse/mcp-memory-server](https://github.com/mnemoverse/mcp-memory-server) |
+
 ## Skills 方法项目 (Assistant Skills)
 
 | 项目名称 | 介绍 | GitHub 链接 |
