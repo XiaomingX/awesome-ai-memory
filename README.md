@@ -112,6 +112,7 @@
 | **Memobase** | [memodb-io/memobase](https://github.com/memodb-io/memobase) | 开源 | Profile-based | 专注于事件演化与人物画像的长期记忆管理。 |
 | **Graphiti** | [getzep/graphiti](https://github.com/getzep/graphiti) | 开源 | 时序知识图谱 | Zep Core 开源版，专注随时间演变的动态关联知识存储。 |
 | **LangMem** | [langchain-ai/langmem](https://github.com/langchain-ai/langmem) | 开源 | 向量 + 属性 | LangChain 官方长期记忆，自动提取、整合并更新知识。 |
+| **HL-Mem** | [lohr13/hl_mem](https://github.com/lohr13/hl_mem) | 开源 | SQLite 单文件 | 治理优先的记忆系统：Event→Claim 证据链、双时间模型、supersede 改口链、三层遗忘，中文 FTS 一等公民，LongMemEval 86% @ 1x 成本。 |
 | **Zep AI** | [getzep/zep](https://github.com/getzep/zep) | 托管/开源 | 图形 + 向量 | 聊天记忆平台，提供情感分析与深度总结功能。 |
 | **Letta** | [letta-ai/letta](https://github.com/letta-ai/letta) | 托管/开源 | 分层存储 | 原 MemGPT，将记忆视为操作系统的多级缓存（RAM/Disk）。 |
 | **SimpleMem** | [aiming-lab/SimpleMem](https://github.com/aiming-lab/SimpleMem) | 开源 | 多模态 | 终身记忆层，支持跨对话的项目历史记忆，含多模态能力。 |
