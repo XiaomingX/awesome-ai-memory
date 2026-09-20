@@ -134,6 +134,7 @@
 | **Khoj** | [khoj-ai/khoj](https://github.com/khoj-ai/khoj) | 多端 | 个人 AI 副驾驶，深度集成 Markdown 文档与笔记。 |
 
 ---
+| **Hyperconsciousness** | [louis030195/hyperconsciousness](https://github.com/louis030195/hyperconsciousness) | Rust / MCP | 开发者 Alpha 阶段的加密、仅追加知识存储，通过有范围和有效期限制的授权提供 MCP 搜索与读取。 |
 
 ## 3. 框架集成（AI Frameworks with Memory Support）
 
