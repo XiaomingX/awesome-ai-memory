@@ -127,6 +127,7 @@
 | :--- | :--- | :--- | :--- |
 | **NovelGenerator** | [KazKozDev/NovelGenerator](https://github.com/KazKozDev/NovelGenerator) | 多代理 | 跟踪人物视角、情节线与情感弧，适合生成完整小说。 |
 | **AgentCortex** | [sage-hq/agentcortex-mcp](https://github.com/sage-hq/agentcortex-mcp) | MCP | 原生 MCP 记忆系统，支持 Cursor 和 Claude Desktop。 |
+| **Agent Memory Notes** | [devilking7x/agent-memory-notes](https://github.com/devilking7x/agent-memory-notes) | 本地优先 | 浏览器端记忆/笔记工具：标签捕获、重复检测、闪卡式间隔回顾、CSV/JSON/Markdown 导入导出与统计看板，无后端，可一键复制 agent-ready 上下文。 |
 | **Basic Memory** | [basicmachines-co/basic-memory](https://github.com/basicmachines-co/basic-memory) | MCP/SQLite | 基于 SQLite 与 Markdown，极其隐私友好，适合本地知识库。 |
 | **Nano-GraphRAG** | [gusye1234/nano-graphrag](https://github.com/gusye1234/nano-graphrag) | 本地优化 | 极轻量级 GraphRAG 实现，适合资源受限环境。 |
 | **SimpleMem** | [aiming-lab/SimpleMem](https://github.com/aiming-lab/SimpleMem) | 开源 | 终身记忆层，支持跨对话的项目历史记忆。 |
