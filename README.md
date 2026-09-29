@@ -132,6 +132,7 @@
 | **SimpleMem** | [aiming-lab/SimpleMem](https://github.com/aiming-lab/SimpleMem) | 开源 | 终身记忆层，支持跨对话的项目历史记忆。 |
 | **Supermemory** | [supermemoryai/supermemory](https://github.com/supermemoryai/supermemory) | 云原生 | 基于 Cloudflare 生态，构建分布式的个人 AI 记忆大脑。 |
 | **Khoj** | [khoj-ai/khoj](https://github.com/khoj-ai/khoj) | 多端 | 个人 AI 副驾驶，深度集成 Markdown 文档与笔记。 |
+| **Hermeneutic** | [hermes-labs-ai/hermeneutic](https://github.com/hermes-labs-ai/hermeneutic) | 本地优先 | 从 agent 日志中挖掘修正意见并存入本地三元组记忆库，在相似任务前以语义检索召回相关指导（PyPI: hermeneutic）。 |
 
 ---
 
