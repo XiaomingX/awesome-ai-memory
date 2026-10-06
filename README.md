@@ -154,6 +154,7 @@
 | :--- | :--- | :--- |
 | **向量数据库** | [Chroma](https://github.com/chroma-core/chroma), [Milvus](https://github.com/milvus-io/milvus), [Qdrant](https://github.com/qdrant/qdrant), [Weaviate](https://github.com/weaviate/weaviate) | 高效的语义相似度搜索与混合检索。 |
 | **图数据库** | [Neo4j](https://github.com/neo4j) | 复杂的实体关系推理与深度关联分析。 |
+| **记忆与检索服务** | [GoodMem](https://goodmem.ai/)（[LlamaIndex 集成](https://github.com/PAIR-Systems-Inc/goodmem-llamaindex)） | 按空间持久保存 Agent 上下文，提供语义检索与重排序；内置只读 HTTP MCP；可自托管（专有核心、免费二进制许可）或使用托管云服务。 |
 
 ---
 
