@@ -121,6 +121,7 @@
 
 ## 2. Agent 与本地记忆工具（Agentic & Local Tools）
 
+- **[MemTether](https://github.com/MemTether/MemTether)** — 跨客户端 AI 记忆中枢：防篡改证据链、supersession 链（纠正不删除）、双时间轴、人类冲突裁决、23 个客户端适配器。334 tests. Apache-2.0. [English](https://github.com/MemTether/MemTether)
 适合个人开发者、单机 Agent 或集成到特定办公流程的项目。
 
 | 名称 | GitHub 网址 | 类型 | 特点 |
