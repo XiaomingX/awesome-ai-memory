@@ -132,6 +132,7 @@
 | **SimpleMem** | [aiming-lab/SimpleMem](https://github.com/aiming-lab/SimpleMem) | 开源 | 终身记忆层，支持跨对话的项目历史记忆。 |
 | **Supermemory** | [supermemoryai/supermemory](https://github.com/supermemoryai/supermemory) | 云原生 | 基于 Cloudflare 生态，构建分布式的个人 AI 记忆大脑。 |
 | **Khoj** | [khoj-ai/khoj](https://github.com/khoj-ai/khoj) | 多端 | 个人 AI 副驾驶，深度集成 Markdown 文档与笔记。 |
+| **SuperLocalMemory** | [qualixar/superlocalmemory](https://github.com/qualixar/superlocalmemory) | MCP/本地优先 | 本地优先的受治理 Agent 记忆：Claude Code、Codex、Cursor 等共用一份记忆，带角色与范围权限、审计记录；记忆里没有答案时会如实说明。AGPL-3.0-or-later。 |
 
 ---
 
