@@ -132,6 +132,7 @@
 | **SimpleMem** | [aiming-lab/SimpleMem](https://github.com/aiming-lab/SimpleMem) | 开源 | 终身记忆层，支持跨对话的项目历史记忆。 |
 | **Supermemory** | [supermemoryai/supermemory](https://github.com/supermemoryai/supermemory) | 云原生 | 基于 Cloudflare 生态，构建分布式的个人 AI 记忆大脑。 |
 | **Khoj** | [khoj-ai/khoj](https://github.com/khoj-ai/khoj) | 多端 | 个人 AI 副驾驶，深度集成 Markdown 文档与笔记。 |
+| **Famfol** | [famfol.com](https://famfol.com) | 本地记忆 / MCP | Mac 本地运行的共享记忆：Claude Code、Codex、Cursor 等 AI 应用共用一份记忆，记录每条记忆的作者，敏感信息保存前自动脱敏（商业软件，测试版）。 |
 
 ---
 
