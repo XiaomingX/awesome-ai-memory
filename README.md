@@ -196,6 +196,7 @@
 | **mcp-memory** | [samwang0723/mcp-memory](https://github.com/samwang0723/mcp-memory) | MCP/Redis | 使用 Redis Graph 作为后端的知识图谱 MCP 服务器。 |
 | **Memorix** | [avids2/memorix](https://github.com/avids2/memorix) | MCP | 本地优先的跨工具共享记忆层，支持 Claude Code / Codex / Cursor / OpenCode 等。 |
 | **mcp-memory (OKF)** | [fellowgeek/mcp-memory](https://github.com/fellowgeek/mcp-memory) | MCP/SQLite | 基于 Open Knowledge Format v0.2 + SQLite FTS5 的持久记忆服务，Markdown 可读可审计。 |
+| **LLMSlim** | [Thanatos9404/llmslim](https://github.com/Thanatos9404/llmslim) | MCP/SQLite | 读写不调用 LLM 的长期记忆 MCP 服务器：消息按原文存入本地 SQLite 或 PostgreSQL，按问题在 token 预算内召回相关消息，支持 Claude Code / Cursor / Codex 等客户端。 |
 
 ---
 
