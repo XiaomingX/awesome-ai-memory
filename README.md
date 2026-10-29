@@ -132,6 +132,7 @@
 | **SimpleMem** | [aiming-lab/SimpleMem](https://github.com/aiming-lab/SimpleMem) | 开源 | 终身记忆层，支持跨对话的项目历史记忆。 |
 | **Supermemory** | [supermemoryai/supermemory](https://github.com/supermemoryai/supermemory) | 云原生 | 基于 Cloudflare 生态，构建分布式的个人 AI 记忆大脑。 |
 | **Khoj** | [khoj-ai/khoj](https://github.com/khoj-ai/khoj) | 多端 | 个人 AI 副驾驶，深度集成 Markdown 文档与笔记。 |
+| **Mnemosyne OS** | [Mnemosyne-OS/Mnemosyne-Neural-OS](https://github.com/Mnemosyne-OS/Mnemosyne-Neural-OS) | 桌面应用/MCP | 面向 Windows、macOS、Linux 的桌面记忆应用：被监视的文件夹在本机分别汇入独立记忆库，检索融合向量排序与本地 BM25 关键词通道，由用户决定接入的模型可读取哪些记忆库；MCP 服务器与 SDK 为 MIT 许可，记忆引擎闭源，随免费桌面版提供。 |
 
 ---
 
