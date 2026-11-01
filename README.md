@@ -132,6 +132,7 @@
 | **SimpleMem** | [aiming-lab/SimpleMem](https://github.com/aiming-lab/SimpleMem) | 开源 | 终身记忆层，支持跨对话的项目历史记忆。 |
 | **Supermemory** | [supermemoryai/supermemory](https://github.com/supermemoryai/supermemory) | 云原生 | 基于 Cloudflare 生态，构建分布式的个人 AI 记忆大脑。 |
 | **Khoj** | [khoj-ai/khoj](https://github.com/khoj-ai/khoj) | 多端 | 个人 AI 副驾驶，深度集成 Markdown 文档与笔记。 |
+| **deja-vu** | [vshulcz/deja-vu](https://github.com/vshulcz/deja-vu) | 本地/MCP | 索引 34 个编码智能体已经写在磁盘上的会话文件（Claude Code、Codex、Cursor、opencode 等），包括安装之前的历史；本地 BM25 检索，不用大模型、不用向量嵌入、不联网。 |
 
 ---
 
