@@ -116,6 +116,7 @@
 | **Letta** | [letta-ai/letta](https://github.com/letta-ai/letta) | 托管/开源 | 分层存储 | 原 MemGPT，将记忆视为操作系统的多级缓存（RAM/Disk）。 |
 | **SimpleMem** | [aiming-lab/SimpleMem](https://github.com/aiming-lab/SimpleMem) | 开源 | 多模态 | 终身记忆层，支持跨对话的项目历史记忆，含多模态能力。 |
 | **MemoryOS** | [BAI-LAB/MemoryOS](https://github.com/BAI-LAB/MemoryOS) | 开源 | 分层存储 | 借鉴操作系统内存分页思想的分层记忆管理（arXiv 2506.06326），常被作为记忆评测基线。 |
+| **MemoryRouter** | [John-Rood/memoryrouter-sdk](https://github.com/John-Rood/memoryrouter-sdk) | 托管 | 向量 | 面向个人的跨工具持久记忆层，ChatGPT、Claude、Codex、Cursor 等通过 MCP 共用一个按用户隔离的记忆库，压缩与会话切换后上下文仍在。 |
 
 ---
 
