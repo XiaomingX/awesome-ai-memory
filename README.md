@@ -196,6 +196,7 @@
 | **mcp-memory** | [samwang0723/mcp-memory](https://github.com/samwang0723/mcp-memory) | MCP/Redis | 使用 Redis Graph 作为后端的知识图谱 MCP 服务器。 |
 | **Memorix** | [avids2/memorix](https://github.com/avids2/memorix) | MCP | 本地优先的跨工具共享记忆层，支持 Claude Code / Codex / Cursor / OpenCode 等。 |
 | **mcp-memory (OKF)** | [fellowgeek/mcp-memory](https://github.com/fellowgeek/mcp-memory) | MCP/SQLite | 基于 Open Knowledge Format v0.2 + SQLite FTS5 的持久记忆服务，Markdown 可读可审计。 |
+| **ClickHouse Loom** | [ClickHouse/loom](https://github.com/ClickHouse/loom) | MCP/HTTP | 可自托管的共享长期记忆服务，通过命名空间与角色控制访问，提供 MCP、HTTP 和 Python/TypeScript SDK。 |
 
 ---
 
